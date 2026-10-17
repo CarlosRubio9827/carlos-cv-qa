@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+*.log
+.qa/
+site-release.tar.gz
+.openai/local-state/
+__pycache__/
+cv/
