@@ -1,6 +1,6 @@
 # Carlos Rubio · Portafolio QA
 
-Sitio estático en español con HTML generado, CSS y JavaScript sin dependencias de producción. El contenido llega completo al navegador y a los buscadores, incluso sin JavaScript. No requiere backend ni servicios de formularios.
+Sitio estático en español e inglés con HTML generado, CSS y JavaScript sin dependencias de producción. El contenido llega completo al navegador y a los buscadores, incluso sin JavaScript. Incluye un selector de idioma y modos claro y oscuro. No requiere backend ni servicios de formularios.
 
 Repositorio: [CarlosRubio9827/carlos-cv-qa](https://github.com/CarlosRubio9827/carlos-cv-qa).
 
@@ -25,12 +25,15 @@ Para publicar en cualquier alojamiento estático, utiliza el contenido de `dist/
 
 - `content/portfolio.mjs`: única fuente de contenido profesional, datos de contacto, fechas, herramientas, enlaces, casos y metadatos. Los perfiles opcionales vacíos se ocultan. No agregar datos que no se hayan verificado con Carlos.
 - `src/render.mjs`: estructura HTML y etiquetas de la interfaz.
+- `content/portfolio.en.mjs`: traducción al inglés; comparte identidad, enlaces y fechas con el contenido original.
+- `src/locales.mjs`: etiquetas de interfaz y diagramas en ambos idiomas.
 - `public/styles.css`: diseño, adaptación a pantallas y movimiento reducido.
 - `public/app.js`: menú, navegación activa y copia de correo.
+- `public/preferences.js`: aplica el tema antes de mostrar la página y recupera el idioma preferido.
 - `public/assets/carlos-rubio-cv.pdf`: CV que se descarga, sin teléfono. El original permanece fuera del repositorio. El script opcional de preparación lo busca en `../cv/`.
 - `public/assets/social-card.png`: imagen para compartir.
 
-`locale` y la selección del objeto de contenido en `scripts/build.mjs` permiten incorporar después un archivo en inglés. También deben traducirse las etiquetas de interfaz de `render.mjs` y `app.js`. No hay un selector de idioma sin traducción disponible.
+La versión en español se genera en `/` y la versión en inglés en `/en/`, con metadatos y enlaces alternativos para cada idioma. El selector conserva la sección actual. Idioma y tema se recuerdan en el navegador; el tema inicial sigue la preferencia del sistema. Si el almacenamiento del navegador está bloqueado, los controles siguen funcionando durante la visita. El CV descargable se conserva en español y se indica en la versión inglesa.
 
 ## Criterios de contenido
 
@@ -44,7 +47,7 @@ Fuente: CV de Carlos Alberto Rubio Gallego entregado en el proyecto, dos página
 
 ## Pendientes opcionales antes de una publicación pública
 
-No faltan datos obligatorios para esta primera versión. GitHub se oculta hasta recibir un perfil verificado. Se puede añadir un dominio propio y una versión en inglés. Al cambiar la dirección de publicación, actualizar `siteUrl` y volver a generar: alimenta canonical, Open Graph y sitemap. La publicación inicial de Sites es privada; para enviarla a reclutadores se deberá habilitar acceso público mediante la configuración del sitio.
+No faltan datos obligatorios para esta versión. GitHub se oculta hasta recibir un perfil verificado. Se puede añadir un dominio propio. Al cambiar la dirección de publicación, actualizar `siteUrl` y volver a generar: alimenta canonical, Open Graph y sitemap. La publicación inicial de Sites es privada; para enviarla a reclutadores se deberá habilitar acceso público mediante la configuración del sitio.
 
 ## Validación
 

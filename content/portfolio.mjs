@@ -1,5 +1,5 @@
 // Fuente de verdad: CV entregado por Carlos, revisado el 16 de octubre de 2026.
-// Para añadir inglés: crear una versión de este objeto y seleccionar el idioma en build.mjs.
+// La traducción al inglés se mantiene en portfolio.en.mjs y comparte datos de identidad y enlaces.
 // Los enlaces opcionales vacíos se omiten automáticamente de la interfaz.
 export default {
   locale: 'es',
@@ -85,5 +85,5 @@ export default {
   certification: { title: 'EF SET Certificate', issuer: 'EF SET', level: 'Inglés B1 · Intermedio', date: '2023-10', period: 'Oct 2023', url: 'https://www.efset.org/cert/c6yEvN' },
   languages: [{ name: 'Español', level: 'Lengua materna' }, { name: 'Inglés', level: 'B1 · Intermedio' }],
   contact: { heading: 'Hablemos de\ncalidad.', description: 'Si buscas un perfil que conecte el negocio con las pruebas manuales, la automatización y la IA aplicada, conversemos.', emailLabel: 'Escríbeme', linkedinLabel: 'Conectar en LinkedIn' },
-  pending: ['Añadir GitHub solo si se proporciona y verifica un perfil público.', 'Añadir un dominio propio cuando esté definido y actualizar siteUrl.', 'Incorporar versión en inglés cuando se traduzca y revise el contenido.']
+  pending: ['Añadir GitHub solo si se proporciona y verifica un perfil público.', 'Añadir un dominio propio cuando esté definido y actualizar siteUrl.']
 };

@@ -17,3 +17,11 @@ Revisado el 16 de octubre de 2026.
 - Las URL externas se transcribieron de las anotaciones del CV. No se publicaron perfiles supuestos ni enlaces de proyectos privados.
 
 Captura de referencia: `.qa/portafolio-desktop.jpg`. La carpeta `.qa/` queda fuera del repositorio y del despliegue; tampoco se incluye el CV original.
+# Actualización del 19 de octubre de 2026
+
+- Español en `/` e inglés en `/en/`: contenido profesional, navegación, diagramas, etiquetas accesibles y metadatos traducidos.
+- Controles ES/EN y claro/oscuro visibles en cabecera; tema inicial según el sistema, con preferencias guardadas en el navegador.
+- Verificación de navegador: cambio de idioma en ambas direcciones conservando `#experiencia`, tema claro y oscuro, preferencias tras recargar y redirección al inglés guardado al volver a `/`.
+- Comprobación visual en escritorio y en móvil de 390 y 320 píxeles, sin desbordamiento horizontal. Menú móvil abre y cierra al navegar.
+- Generación y comprobaciones automáticas aprobadas para ambos idiomas: enlaces internos, archivos, metadatos, datos estructurados, PDF y ausencia de contenido privado o traducciones incompletas.
+- El CV descargable sigue en español; la versión inglesa lo indica junto al enlace.

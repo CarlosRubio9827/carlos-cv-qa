@@ -10,7 +10,8 @@ const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=u
 http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, 'http://localhost');
-    const filename = path.resolve(root, '.' + decodeURIComponent(url.pathname === '/' ? '/index.html' : url.pathname));
+    const pathname = decodeURIComponent(url.pathname);
+    const filename = path.resolve(root, '.' + (pathname.endsWith('/') ? pathname + 'index.html' : pathname));
     if (!filename.startsWith(root + path.sep) && filename !== path.join(root, 'index.html')) { res.writeHead(403).end(); return; }
     if (!(await stat(filename)).isFile()) throw new Error('not found');
     const file = await readFile(filename);
